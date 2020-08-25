@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>HTML5</title> 
+
+
+</head>
+<body>
+	<form>
+	Enter a date before 1980-01-01:
+	<input type="date" name="bday" max="1979-12-31"><br> 
+	Enter a date after 2000-01-01:
+	<input type="date" name="bday" min="2000-01-02"><br>
+	Birthday (date and time):
+	<input type="datetime-local" name="bdaytime"> <!--especifica un campo de entrada de fecha y hora, con ninguna zona de tiempo. -->
+	<br>
+	E-mail:
+	<input type="email" name="email">
+	Birthday (month and year):
+	<input type="month" name="bdaymonth">
+	<br>
+	Quantity (between 1 and 5):
+	<input type="number" name="quantity" min="1" max="5">
+	Quantity:
+	<input type="number" name="points" min="0" max="100" step="10" value="30">
+	<br>Rango
+	<input type="range" name="points" min="0" max="10">
+	<br>Search Google:
+	<input type="search" name="googlesearch">
+	<br>
+	Telephone:
+	<input type="tel" name="usrtel"> <!-- El tipo de teléfono sólo se admite actualmente en Safari 8.
+-->	<br>
+	Select a time:
+	<input type="time" name="usr_time">
+	<br>Add your homepage:
+	<input type="url" name="homepage">
+	<br>
+	Select a week:
+	<input type="week" name="week_year">
+	<br> <!-- El atributo múltiple funciona con los siguientes tipos de entrada: correo electrónico y archivo.-->
+	 Select images: <input type="file" name="img" multiple>
+	 <br>
+	 Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+	 <br> <!-- El atributo del marcador de posición-->
+	  <input type="text" name="fname" placeholder="First name">
+	  <br>
+	   Username: <input type="text" name="usrname" required>
+	   <br>
+	   Campo de entrada con intervalos de número legal especificados: en este 3
+	    <input type="number" name="points" step="3">
+</form>
+</body>
+</html>
